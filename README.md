@@ -7,7 +7,7 @@ This Python script is designed to perform facial recognition for attendance trac
 
 ## Prerequisites
 
-- Python 3.x installed on your system.
+- Python 3.10.10 installed on your system.
 - Required Python libraries:
   - `numpy`
   - `opencv-python`
@@ -52,6 +52,36 @@ This Python script is designed to perform facial recognition for attendance trac
 
 ## Running the Script
 
+# Creating Images for Facial Recognition
+
+## Capture Images Using `capture_image_from_camera.py`
+
+To create the required images (`rahul.png` and `sneha.png`) for facial recognition:
+
+1. **Run the `capture_image_from_camera.py` Script**
+
+   Use the provided script to capture images from your webcam:
+
+2. **Follow On-Screen Instructions**
+
+- When prompted, position the person (e.g., Rahul or Sneha) in front of the camera.
+- Ensure good lighting and clear visibility of the person's face.
+- Capture multiple images to ensure different angles and lighting conditions are covered.
+
+3. **Save Images**
+
+- The script will save the captured images as `rahul.png` and `sneha.png` in the current directory.
+- These images will be used for facial recognition in the attendance tracking system (`face_recognition_code.py`).
+
+4. **Ensure Quality**
+
+- Review the captured images to ensure they are clear and representative of the person's face.
+- Adjust camera settings or re-capture images if needed for better accuracy in facial recognition.
+
+## Usage in Facial Recognition System
+
+Once the images (`rahul.png` and `sneha.png`) are created and saved in the same directory as `face_recognition_code.py`, they will be automatically used by the facial recognition script to identify and record attendance during lectures or sessions.
+
 - Open a terminal or command prompt and navigate to the directory containing the script (`face_recognition_code.py`).
 
 - Run the script using Python:
@@ -73,5 +103,5 @@ This Python script is designed to perform facial recognition for attendance trac
 - Adjust face recognition parameters or use more advanced models for improved accuracy as needed.
 - Exit the script by pressing `q` on the keyboard to save data and close the video window.
 ```
+**Disclaimer**: This code has been adapted and updated with the help of AI tools to simplify its execution process.
 
-Save the above content into a file with a `.md` extension (e.g., `README.md`). This Markdown file now includes the correct repository URL, providing a comprehensive guide for setting up, running, and using your facial recognition-based attendance tracking system. Adjust the content further based on your specific project details and formatting preferences before using or distributing it.
